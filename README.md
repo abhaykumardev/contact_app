@@ -354,7 +354,7 @@ Through this project, I learned:
 
 MERN Stack Developer | Learning Full Stack Web Development
 
-GitHub: https://github.com/your-username
+GitHub: https://github.com/abhaykumardev
 
 ---
 
