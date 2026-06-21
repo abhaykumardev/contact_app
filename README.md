@@ -129,7 +129,7 @@ Create a `.env` file in the root directory.
 ```env
 PORT=3000
 
-CONNECTION_STRING=mongodb+srv://username:password@cluster.mongodb.net/mycontact_backend
+CONNECTION_STRING=
 
 JWT_SECRET=your_secret_key
 ```
