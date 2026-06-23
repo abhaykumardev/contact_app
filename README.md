@@ -105,7 +105,7 @@ contact_app/
 ### Clone Repository
 
 ```bash
-git clone https://github.com/your-username/contact-app.git
+git clone https://github.com/your-abhaykumardev/contact-app.git
 ```
 
 ### Move Into Project Folder
