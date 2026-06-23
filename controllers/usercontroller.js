@@ -5,6 +5,18 @@ const jwt = require("jsonwebtoken");
 //@desc  Register a new user
 //@route POST /api/users/register
 //@access Public
+
+const generateToken = (id) => {
+  return jwt.sign(
+    { id },
+    process.env.JWT_SECRET,
+    {
+      expiresIn: "30d",
+    }
+  );
+};
+
+
 const registerUser =asyncHandler (async(req, res) => {
   const { name, email, password } = req.body;
   if (!name || !email || !password) {
@@ -58,7 +70,7 @@ const loginUser = asyncHandler(async (req, res) => {
         email: user.email
       }
     }, process.env.JWT_SECRET, {
-      expiresIn: "1m"
+      expiresIn: "30d"
     });
     res.json({
       _id: user._id,
